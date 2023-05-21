@@ -1,0 +1,238 @@
+html {
+    background: #7700ff;
+    font-family: System, monospace;
+    font-size: 12pt;
+  }
+
+  h6 {
+    font-family: System, monospace;
+    font-size: 12pt;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  span:after {
+    content: " ";
+    display: inline-block;
+    width: 2%;
+  }
+  
+  fieldset {
+    float: left;
+    padding-right: 18px;
+  }
+  
+  #logo {
+    font-family: "Times";
+    font-size: 17pt;
+    position: relative;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .window {
+    position: relative;
+    top: -25px;
+    cursor: default;
+    margin: 15px;
+    width: 80%;
+    background: #8c00ff;
+    color: rgb(255, 255, 255);
+    border: 6px double white;
+    padding: 1em;
+    box-shadow: 0 0 0 3px #ae00ff, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
+    max-width: 640px;
+  }
+  
+  .window.white {
+    background: #8c00ff;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 3px #ae00ff, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
+  }
+  .window.david {
+    top: -30px;
+  }
+  
+  .window.half-width {
+    width: 50%;
+  }
+  
+  .window h1 {
+    text-align: center;
+  }
+  
+  .window.blue p {
+    color: rgb(183, 0, 255);
+    text-shadow: 0 0 2px white;
+    position: relative;
+    top: -15px;
+  }
+
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 24px;
+    height: 24px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: relative;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin: 5px;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .emoji {
+    color: transparent;  
+    text-shadow: 0 0 0 #6000af;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button,
+  .button,
+  .button:link {
+    display: inline-block;
+    font-weight: bolder;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    background: rgb(199, 0, 182);
+    padding: 0 1em;
+    box-shadow: 0.5em 0.5em 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: 0.2s all ease-in;
+    border: 1px outset green;
+  }
+  
+  button.full-width,
+  .button.full-width {
+    display: block;
+    text-align: center;
+  }
+  
+  button:before,
+  .button:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    /*background: rgba(255,255,0,.5); /* DEBUG CLICK AREA */
+  }
+  
+  button:hover,
+  .button:active,
+  .button:focus,
+  .button:hover {
+    transform: translate3d(0.25em, 0.25em, 10em);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    background: rgb(162, 0, 255);
+  }
+  
+  button:hover:before,
+  .button:hover:before,
+  button:focus:before,
+  .button:focus:before {
+    top: -1em;
+    left: -1em;
+  }
+  
+  .button.pressed {
+    box-shadow: none;
+    left: 0.25em;
+    top: 0.25em;
+    margin-right: 0.25em;
+    background: rgb(255, 0, 242);
+    border: 1px outset #707070;
+  }
+  
+  button:disabled {
+    transform: translate3d(0.25em, 0.25em, 10em);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    background: gray;
+    border: 1px outset #707070;
+  }
+  
+  button:first-letter,
+  .button:first-letter {
+    color: white;
+  }
+  
+  button#btn-transfer {
+    margin-top: 20px;
+  }
+
+  button#btn-payout {
+    margin-top: 35px;
+  }
+  
+  
+  input,
+  textarea {
+    background: rgb(206, 102, 255);
+    color: aqua;
+    width: 100%;
+    max-width: 100%;
+    font-size: 12pt;
+  }
+  input:disabled {
+    background: #505070;
+    color: #d0d0d0;
+    border: 2px solid #000000;
+  }
+  
+  .window > textarea {
+    width: 100%;
+    border: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .trade-buttons {
+    text-align: center;
+  }
+  
+  div .transfer {
+    display: table;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
