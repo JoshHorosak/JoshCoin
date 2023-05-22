@@ -4,7 +4,7 @@ IMPORTANT: In order to access the canister that serves the front end, you will n
 https://b4nc6-oqaaa-aaaam-abm7q-cai.icp0.io/
 
 Currently the app is using Internet Identity to authenticate users and so I would recommend using mobile devices as biometric login is the fastest way to get started, unless you have fido keys or biometrics on your computer. There's no need to remember any passwords as this is a valueless cryptocurrency.
-![alt text](https://raw.githubusercontent.com/JoshHorosak/JoshCoin/main/JoshCoin.png)
+![alt text](https://raw.githubusercontent.com/JoshHorosak/JoshCoin/main/Josh.png)
 This is a problem for an easy login flow so I am currently working on integrating the option to login and authenticate with the app using Plug Wallet. Along with a section on the website to display the transaction history.
 
 
